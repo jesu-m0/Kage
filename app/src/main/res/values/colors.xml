@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="kage_background">#FF121212</color>
+    <color name="kage_surface">#FF1E1E1E</color>
+    <color name="kage_primary">#FFE50914</color>
+    <color name="kage_on_primary">#FFFFFFFF</color>
+    <color name="kage_on_background">#FFFFFFFF</color>
+    <color name="kage_on_surface">#FFE0E0E0</color>
+    <color name="kage_card_focused">#FF2A2A2A</color>
+</resources>

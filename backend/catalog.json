@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "updated_at": "2025-01-01T00:00:00Z",
+  "categories": [
+    {
+      "name": "Live Sports",
+      "items": [
+        {
+          "id": "1",
+          "title": "Example Stream",
+          "description": "Optional description",
+          "thumbnail": "https://example.com/thumb.jpg",
+          "stream_type": "hls",
+          "stream_url": "https://example.com/stream.m3u8"
+        },
+        {
+          "id": "2",
+          "title": "Acestream Example",
+          "description": "Via acestream engine",
+          "thumbnail": "https://example.com/thumb2.jpg",
+          "stream_type": "acestream",
+          "stream_url": "acestream://abc123hashhere"
+        }
+      ]
+    },
+    {
+      "name": "Movies",
+      "items": [
+        {
+          "id": "3",
+          "title": "Sample Movie Stream",
+          "description": "A sample HLS movie stream",
+          "thumbnail": "",
+          "stream_type": "hls",
+          "stream_url": "https://example.com/movie.m3u8"
+        }
+      ]
+    }
+  ]
+}
