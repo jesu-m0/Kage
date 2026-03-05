@@ -1,7 +1,19 @@
 {
   "permissions": {
     "allow": [
-      "Bash(chmod +x \"c:/Users/jesus/Desktop/projects/Kage/gradlew\")"
+      "Bash(chmod +x \"c:/Users/jesus/Desktop/projects/Kage/gradlew\")",
+      "Bash(\"$LOCALAPPDATA/Android/Sdk/platform-tools/adb.exe\" devices)",
+      "Bash(\"$LOCALAPPDATA/Android/Sdk/platform-tools/adb.exe\" shell am start -n com.kage.app/.MainActivity)",
+      "Bash(\"$LOCALAPPDATA/Android/Sdk/platform-tools/adb.exe\" shell pm list packages)",
+      "Bash(ADB=\"$LOCALAPPDATA/Android/Sdk/platform-tools/adb.exe\")",
+      "Bash(\"$ADB\" shell pm list packages)",
+      "Bash(\"$ADB\" devices)",
+      "Bash(\"$ADB\" install -r \"c:/Users/jesus/Desktop/projects/Kage/app/build/outputs/apk/debug/app-debug.apk\")",
+      "Bash(./gradlew.bat clean assembleDebug)",
+      "Bash(where gradle)",
+      "Read(//c/Users/jesus/Desktop/projects/Kage/**)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Users/jesus/Desktop/projects/Kage/$LOCALAPPDATA/**)"
     ]
   }
 }

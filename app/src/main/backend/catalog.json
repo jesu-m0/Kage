@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "updated_at": "2026-03-04T12:00:00Z",
+  "categories": [
+    {
+      "name": "Test Streams",
+      "items": [
+        {
+          "id": "test-1",
+          "title": "Big Buck Bunny",
+          "description": "Animated short film - HLS test stream",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Big_buck_bunny_poster_big.jpg/440px-Big_buck_bunny_poster_big.jpg",
+          "stream_type": "hls",
+          "stream_url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+        },
+        {
+          "id": "test-2",
+          "title": "Sintel",
+          "description": "Open source animated film - HLS",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Sintel-poster.jpg/440px-Sintel-poster.jpg",
+          "stream_type": "hls",
+          "stream_url": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
+        },
+        {
+          "id": "test-3",
+          "title": "Tears of Steel",
+          "description": "Sci-fi open movie project - HLS",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Tears_of_Steel_poster.jpg/440px-Tears_of_Steel_poster.jpg",
+          "stream_type": "hls",
+          "stream_url": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+        },
+        {
+          "id": "test-4",
+          "title": "Elephant Dream",
+          "description": "First Blender open movie",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Elephants_Dream_s1_proog.jpg/440px-Elephants_Dream_s1_proog.jpg",
+          "stream_type": "hls",
+          "stream_url": "https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8"
+        }
+      ]
+    },
+    {
+      "name": "Acestream Test",
+      "items": [
+        {
+          "id": "ace-1",
+          "title": "Acestream Sample",
+          "description": "Requires Acestream Engine installed on device",
+          "thumbnail": "https://via.placeholder.com/320x180.png?text=Acestream+Test",
+          "stream_type": "acestream",
+          "stream_url": "acestream://PASTE_A_REAL_HASH_HERE"
+        }
+      ]
+    }
+  ]
+}
