@@ -1,6 +1,9 @@
 package com.kage.app
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
@@ -13,6 +16,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalLifecycleOwner
 import com.kage.app.data.model.Catalog
 import com.kage.app.data.model.StreamItem
@@ -83,12 +87,26 @@ fun KageAppContent() {
                     message = state.message,
                     onRetry = { refreshTrigger++ }
                 )
-                is CatalogState.Success -> HomeScreen(
-                    catalog = state.catalog,
-                    onItemClick = { item ->
-                        currentScreen = Screen.Player(item)
-                    }
-                )
+                is CatalogState.Success -> {
+                    val context = LocalContext.current
+                    HomeScreen(
+                        catalog = state.catalog,
+                        onItemClick = { item ->
+                            if (item.isAcestream) {
+                                val hash = item.streamUrl.removePrefix("acestream://")
+                                val aceIntent = Intent("org.acestream.action.start_content")
+                                aceIntent.data = Uri.parse("acestream:?content_id=$hash")
+                                try {
+                                    context.startActivity(aceIntent)
+                                } catch (_: Exception) {
+                                    Toast.makeText(context, "Acestream Media app not installed", Toast.LENGTH_LONG).show()
+                                }
+                            } else {
+                                currentScreen = Screen.Player(item)
+                            }
+                        }
+                    )
+                }
             }
         }
         is Screen.Player -> {

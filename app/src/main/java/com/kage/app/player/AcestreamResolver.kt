@@ -16,7 +16,7 @@ object AcestreamResolver {
     fun resolve(acestreamUrl: String): String? {
         val match = hashPattern.find(acestreamUrl) ?: return null
         val hash = match.groupValues[1]
-        return "http://${Config.ACESTREAM_ENGINE_HOST}:${Config.ACESTREAM_ENGINE_PORT}/ace/getstream?id=$hash&.mp4"
+        return "http://${Config.ACESTREAM_ENGINE_HOST}:${Config.ACESTREAM_ENGINE_PORT}/ace/getstream?id=$hash"
     }
 
     /**

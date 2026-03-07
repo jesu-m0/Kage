@@ -39,7 +39,7 @@ class KagePlayer(context: Context) {
 
         val mediaItem = MediaItem.fromUri(url)
 
-        if (item.isHls) {
+        if (item.isHls || item.isAcestream) {
             val dataSourceFactory = DefaultDataSource.Factory(context)
             val hlsSource = HlsMediaSource.Factory(dataSourceFactory)
                 .createMediaSource(mediaItem)
