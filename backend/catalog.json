@@ -101,15 +101,289 @@
       ]
     },
     {
-      "name": "Acestream Test",
+      "name": "DAZN F1",
       "items": [
         {
-          "id": "ace-1",
-          "title": "Acestream Sample",
-          "description": "Requires Acestream Engine installed on device",
-          "thumbnail": "https://via.placeholder.com/320x180.png?text=Acestream+Test",
+          "id": "ace-dazn-f1-1",
+          "title": "DAZN F1 N",
+          "description": "DAZN F1 - Acestream",
+          "thumbnail": "",
           "stream_type": "acestream",
-          "stream_url": "acestream://PASTE_A_REAL_HASH_HERE"
+          "stream_url": "acestream://d65257bb934b73647374224fd62d836815804be2"
+        },
+        {
+          "id": "ace-dazn-f1-2",
+          "title": "DAZN F1 720p *",
+          "description": "DAZN F1 720p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://27d11bbeb3026231d52de16b1fac48da7a099247"
+        },
+        {
+          "id": "ace-dazn-f1-3",
+          "title": "DAZN F1 1080p *",
+          "description": "DAZN F1 1080p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://d719181097d256073844390b3e094fbcb1bceaa4"
+        },
+        {
+          "id": "ace-dazn-f1-4",
+          "title": "DAZN F1 1080p *",
+          "description": "DAZN F1 1080p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://895d08633bb22c2573281655cf3ca44de476cc73"
+        },
+        {
+          "id": "ace-dazn-f1-5",
+          "title": "DAZN F1 1080p **",
+          "description": "DAZN F1 1080p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://bcf9dc38f92e90a71b87bd54b3bac91b76d09a69"
+        },
+        {
+          "id": "ace-dazn-f1-6",
+          "title": "DAZN F1 1080p **",
+          "description": "DAZN F1 1080p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://fd53cfa7055fe458d4f5c0ff59a06cd43723be55"
+        },
+        {
+          "id": "ace-dazn-f1-7",
+          "title": "DAZN F1 1080p **",
+          "description": "DAZN F1 1080p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://b08e158ea3f5c72084f5ff8e3c30ca2e4d1ff6d1"
+        }
+      ]
+    },
+    {
+      "name": "M+ Deportes",
+      "items": [
+        {
+          "id": "ace-mdep2-1",
+          "title": "M. Deportes 2 N",
+          "description": "Movistar Deportes 2 - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://3afe1af18f8ff78e9946856911b00c67477052b5"
+        },
+        {
+          "id": "ace-mdep2-2",
+          "title": "M+ Deportes 2 720p",
+          "description": "Movistar Deportes 2 720p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://6b15368775693c33c49fab02e7900c1976a5da90"
+        },
+        {
+          "id": "ace-mdep2-3",
+          "title": "M+ Deportes 2 1080p",
+          "description": "Movistar Deportes 2 1080p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://3774d8feab016ca766b35ea8488e7514ca30e0ee"
+        },
+        {
+          "id": "ace-mdep2-4",
+          "title": "M+ Deportes 2 720p",
+          "description": "Movistar Deportes 2 720p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://bfa01c11c5c6b7a616a516de4f2c769a89d26b25"
+        },
+        {
+          "id": "ace-mdep2-5",
+          "title": "M+ Deportes 2 1080p",
+          "description": "Movistar Deportes 2 1080p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0"
+        },
+        {
+          "id": "ace-mdep3-1",
+          "title": "M. Deportes 3 N",
+          "description": "Movistar Deportes 3 - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://39fefdecfc953dcf6e7c589739bf486c2e605ed0"
+        },
+        {
+          "id": "ace-mdep3-2",
+          "title": "M+ Deportes 3 720p",
+          "description": "Movistar Deportes 3 720p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d"
+        },
+        {
+          "id": "ace-mdep3-3",
+          "title": "M+ Deportes 3 1080p",
+          "description": "Movistar Deportes 3 1080p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://f4d9011721fad5098febbe4d7c078a582e176a01"
+        },
+        {
+          "id": "ace-mdep4-1",
+          "title": "M. Deportes 4 N",
+          "description": "Movistar Deportes 4 - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://8b5f9d967384afab226dd759e6e9dfaee9993869"
+        },
+        {
+          "id": "ace-mdep4-2",
+          "title": "M+ Deportes 4 720p",
+          "description": "Movistar Deportes 4 720p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://2a5d90651e212106434edea5bfbba1a843b7b97c"
+        },
+        {
+          "id": "ace-mdep4-3",
+          "title": "M+ Deportes 4 1080p",
+          "description": "Movistar Deportes 4 1080p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://4abe06c5cce7cb3c6bef2c3bccaafefd3299794f"
+        },
+        {
+          "id": "ace-mdep4-4",
+          "title": "M. Deportes 4 --> ELCANO",
+          "description": "Movistar Deportes 4 ELCANO - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://590a1f4546e3a0d5d419b62b8177b44d6ce0339f"
+        },
+        {
+          "id": "ace-mdep5-1",
+          "title": "M. Deportes 5 N",
+          "description": "Movistar Deportes 5 - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://3230cdca852a10325222e3c546e499e31d547a90"
+        },
+        {
+          "id": "ace-mdep5-2",
+          "title": "M+ Deportes 5 1080p",
+          "description": "Movistar Deportes 5 1080p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://646a1ed4ece843de1979f7888cbdd4d937506a28"
+        }
+      ]
+    },
+    {
+      "name": "LIGA \ud83c\uddea\ud83c\uddf8",
+      "items": [
+        {
+          "id": "ace-liga-1",
+          "title": "M. Liga N",
+          "description": "Movistar LaLiga - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://31c19ffb3472c289c5bbbbc174449c8ed0d19e38"
+        },
+        {
+          "id": "ace-liga-2",
+          "title": "M+ LaLiga 720p *",
+          "description": "Movistar LaLiga 720p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://3ace1463a7cad979c3a4002b245487e9982e9f1a"
+        },
+        {
+          "id": "ace-liga-3",
+          "title": "M+ LaLiga 720p *",
+          "description": "Movistar LaLiga 720p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://f863873de9f7b2996dde19a0657dd89835af3007"
+        },
+        {
+          "id": "ace-liga-4",
+          "title": "M+ LaLiga 720p **",
+          "description": "Movistar LaLiga 720p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://14b6cd8769cd485f2cffdca64be9698d9bfeac58"
+        },
+        {
+          "id": "ace-liga-5",
+          "title": "M+ LaLiga 1080p *",
+          "description": "Movistar LaLiga 1080p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://0febfb5cac3384f487d55c559bbfc877db2d0357"
+        },
+        {
+          "id": "ace-liga-6",
+          "title": "M+ LaLiga 1080p **",
+          "description": "Movistar LaLiga 1080p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://00c9bc9c5d7d87680a5a6bed349edfa775a89947"
+        },
+        {
+          "id": "ace-liga-7",
+          "title": "M+ LaLiga 1080p **",
+          "description": "Movistar LaLiga 1080p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://4b528d10eaad747ddf52251206177573ee3e9f74"
+        },
+        {
+          "id": "ace-liga-8",
+          "title": "M+ LaLiga 2 720p **",
+          "description": "Movistar LaLiga 2 720p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://ad42faa399df66dcd62a1cbc9d1c99ed4512d3b8"
+        },
+        {
+          "id": "ace-liga-9",
+          "title": "M+ LaLiga 2 1080p **",
+          "description": "Movistar LaLiga 2 1080p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://51b363b1c4d42724e05240ad068ad219df8042ec"
+        },
+        {
+          "id": "ace-liga-10",
+          "title": "M+ LaLiga 2 *",
+          "description": "Movistar LaLiga 2 - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://b45cfe568e106a7df65c950805d6f123c989ce84"
+        },
+        {
+          "id": "ace-mplus-1",
+          "title": "M. Plus 720p",
+          "description": "Movistar Plus 720p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://d23497596720b47b096ec0f850d6d26a19d1a336"
+        },
+        {
+          "id": "ace-mplus-2",
+          "title": "M. Plus 1080p",
+          "description": "Movistar Plus 1080p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://ed74406ccdb3c21941b919db6bffca7f1de015bb"
+        },
+        {
+          "id": "ace-mplus-3",
+          "title": "M. Plus",
+          "description": "Movistar Plus - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78"
         }
       ]
     }
