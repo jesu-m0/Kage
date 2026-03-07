@@ -1,5 +1,6 @@
 package com.kage.app
 
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -94,12 +95,9 @@ fun KageAppContent() {
                         onItemClick = { item ->
                             if (item.isAcestream) {
                                 val hash = item.streamUrl.removePrefix("acestream://")
-                                val aceIntent = Intent("org.acestream.action.start_content")
-                                aceIntent.data = Uri.parse("acestream:?content_id=$hash")
-                                try {
-                                    context.startActivity(aceIntent)
-                                } catch (_: Exception) {
-                                    Toast.makeText(context, "Acestream Media app not installed", Toast.LENGTH_LONG).show()
+                                val started = tryStartAcestream(context, hash)
+                                if (!started) {
+                                    Toast.makeText(context, "Acestream app not installed", Toast.LENGTH_LONG).show()
                                 }
                             } else {
                                 currentScreen = Screen.Player(item)
@@ -116,4 +114,33 @@ fun KageAppContent() {
             )
         }
     }
+}
+
+private fun tryStartAcestream(context: Context, contentId: String): Boolean {
+    // Option A: start_content intent with new package (3.2.x+)
+    try {
+        val intent = Intent("org.acestream.action.start_content")
+        intent.setPackage("org.acestream.node")
+        intent.data = Uri.parse("acestream:?content_id=$contentId")
+        context.startActivity(intent)
+        return true
+    } catch (_: Exception) {}
+
+    // Option B: start_content intent without specific package
+    try {
+        val intent = Intent("org.acestream.action.start_content")
+        intent.data = Uri.parse("acestream:?content_id=$contentId")
+        context.startActivity(intent)
+        return true
+    } catch (_: Exception) {}
+
+    // Option C: ACTION_VIEW with acestream:// URI
+    try {
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse("acestream://$contentId")
+        context.startActivity(intent)
+        return true
+    } catch (_: Exception) {}
+
+    return false
 }

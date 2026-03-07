@@ -275,6 +275,128 @@
           "thumbnail": "",
           "stream_type": "acestream",
           "stream_url": "acestream://646a1ed4ece843de1979f7888cbdd4d937506a28"
+        },
+        {
+          "id": "ace-mdep6-1",
+          "title": "M. Deportes 6 N",
+          "description": "Movistar Deportes 6 - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://8f982a0d6e3196c12d0034142b65008321150f7c"
+        }
+      ]
+    },
+    {
+      "name": "LIGA 2da \ud83c\uddea\ud83c\uddf8",
+      "items": [
+        {
+          "id": "ace-hyper-1",
+          "title": "LaLiga TV Hypermotion 720p",
+          "description": "LaLiga TV Hypermotion 720p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://1f75d92098580443857caa95a719103cb83781b0"
+        },
+        {
+          "id": "ace-hyper-2",
+          "title": "LaLiga TV Hypermotion 1080p",
+          "description": "LaLiga TV Hypermotion 1080p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://4636ed75106cb00e9c70cc2029edf0a4df7ad73f"
+        },
+        {
+          "id": "ace-hyper-3",
+          "title": "Hypermotion FHD --> ELCANO",
+          "description": "LaLiga TV Hypermotion FHD ELCANO - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://87bb542f974b6b9e89d0f2e20ed6dc93426f4be0"
+        },
+        {
+          "id": "ace-hyper-4",
+          "title": "Hypermotion SD --> ELCANO",
+          "description": "LaLiga TV Hypermotion SD ELCANO - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://a4f072c9b614323ac1258a175f868a909ea3c8cd"
+        },
+        {
+          "id": "ace-hyper2-1",
+          "title": "Hypermotion 2 FHD --> ELCANO",
+          "description": "LaLiga TV Hypermotion 2 FHD ELCANO - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://709075831bf5c41ed0a20dfbd640aab6c28971f8"
+        },
+        {
+          "id": "ace-hyper2-2",
+          "title": "Hypermotion 2 720p",
+          "description": "LaLiga TV Hypermotion 2 720p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://3a21e651c0bffe810cfc8537065cb81f5ed68a55"
+        },
+        {
+          "id": "ace-hyper2-3",
+          "title": "Hypermotion 2 1080p",
+          "description": "LaLiga TV Hypermotion 2 1080p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://a5b9d834ad92bfb80fe01bf89cc20bd68be199fb"
+        }
+      ]
+    },
+    {
+      "name": "\ud83c\udfc0 LIGA ENDESA",
+      "items": [
+        {
+          "id": "ace-acb-1",
+          "title": "DAZN ACB 1 **",
+          "description": "DAZN ACB 1 - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://7af3d01607359fd1777de3d34d8d505ee5591b82"
+        },
+        {
+          "id": "ace-acb-2",
+          "title": "ACB EVENTO 01 720p *",
+          "description": "ACB Evento 01 720p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://8faa686a99697b99261346e479ead172b1d9d5d2"
+        },
+        {
+          "id": "ace-acb-3",
+          "title": "ACB EVENTO 01 720p **",
+          "description": "ACB Evento 01 720p - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://23bee556c002d0726c1f0cac98a1901cff0a9239"
+        },
+        {
+          "id": "ace-acb-4",
+          "title": "ACB EVENTO 01 **",
+          "description": "ACB Evento 01 - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://53962d7fb865aff73b34a3afb2905cd492f60d75"
+        },
+        {
+          "id": "ace-acb-5",
+          "title": "ACB EVENTO 02 **",
+          "description": "ACB Evento 02 - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://22b702984a0db43fd371c30e2df150b2336551cd"
+        },
+        {
+          "id": "ace-acb-6",
+          "title": "ACB EVENTO 03 **",
+          "description": "ACB Evento 03 - Acestream",
+          "thumbnail": "",
+          "stream_type": "acestream",
+          "stream_url": "acestream://02ec118ee4586d96df9115ffc486be9a499d00d9"
         }
       ]
     },

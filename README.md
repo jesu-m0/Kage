@@ -40,7 +40,15 @@ Supported `stream_type` values: `hls`, `acestream`
 
 ## Acestream
 
-Acestream links require the Acestream Engine running on the device. The app resolves `acestream://HASH` to `http://127.0.0.1:6878/ace/getstream?id=HASH&.mp4`.
+Acestream channels are played via the **Ace Stream Media** app installed on the device. When you tap an acestream channel, Kage launches Ace Stream's built-in player via intent (`org.acestream.action.start_content`), which is free (ad-supported) and doesn't require a premium subscription.
+
+### Ace Stream Setup (Fire Stick)
+
+1. Download the APK from https://android.acestream.net/download/apk
+2. Install via ADB: `adb install acestream-engine-x.x.x.apk`
+3. Open Ace Stream Media once to initialize
+
+**Tested version:** Ace Stream Media **3.2.14.5** (APK from https://android.acestream.net/download/apk)
 
 ## Tech Stack
 

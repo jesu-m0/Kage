@@ -8,6 +8,11 @@
             <action android:name="org.acestream.action.start_content" />
             <data android:scheme="acestream" />
         </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="acestream" />
+        </intent>
+        <package android:name="org.acestream.node" />
     </queries>
 
     <uses-feature
