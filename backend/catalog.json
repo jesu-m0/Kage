@@ -1,7 +1,84 @@
 {
   "version": 1,
-  "updated_at": "2026-03-04T12:00:00Z",
+  "updated_at": "2026-03-07T12:00:00Z",
   "categories": [
+    {
+      "name": "Spanish Channels",
+      "items": [
+        {
+          "id": "tdp",
+          "title": "Teledeporte",
+          "description": "RTVE Teledeporte live stream - HLS",
+          "thumbnail": "",
+          "stream_type": "hls",
+          "stream_url": "https://rtvelivestream.rtve.es/rtvesec/tdp/tdp_main.m3u8"
+        },
+        {
+          "id": "la1",
+          "title": "La 1",
+          "description": "RTVE La 1 live stream",
+          "thumbnail": "https://pbs.twimg.com/profile_images/2008842210414915584/zIp_go25_200x200.jpg",
+          "stream_type": "hls",
+          "stream_url": "https://rtvelivestream.rtve.es/rtvesec/la1/la1_main_dvr.m3u8"
+        },
+        {
+          "id": "la2",
+          "title": "La 2",
+          "description": "RTVE La 2 live stream",
+          "thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kqgHWySi5xprs1VFCNCX0IKNT8yXBLZC43JMoB8j0JUto=s200",
+          "stream_type": "hls",
+          "stream_url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8"
+        },
+        {
+          "id": "rne",
+          "title": "RNE para todos",
+          "description": "Radio Nacional de España video stream",
+          "thumbnail": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
+          "stream_type": "hls",
+          "stream_url": "https://rtvelivestream.rtve.es/rtvesec/rne/rne_para_todos_main.m3u8"
+        },
+        {
+          "id": "24h",
+          "title": "Canal 24h",
+          "description": "RTVE 24h news channel",
+          "thumbnail": "https://pbs.twimg.com/profile_images/1634293543987453954/mb1Rzmso_200x200.jpg",
+          "stream_type": "hls",
+          "stream_url": "https://rtvelivestream.rtve.es/rtvesec/24h/24h_main_dvr.m3u8"
+        },
+        {
+          "id": "rmtv-es",
+          "title": "Real Madrid TV",
+          "description": "Real Madrid official channel (Spanish)",
+          "thumbnail": "https://graph.facebook.com/RealMadrid/picture?width=200&height=200",
+          "stream_type": "hls",
+          "stream_url": "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8"
+        },
+        {
+          "id": "rmtv-en",
+          "title": "Real Madrid TV EN",
+          "description": "Real Madrid official channel (English)",
+          "thumbnail": "https://graph.facebook.com/RealMadrid/picture?width=200&height=200",
+          "stream_type": "hls",
+          "stream_url": "https://rmtv.akamaized.net/hls/live/2043154/rmtv-en-web/master.m3u8"
+        },
+        {
+          "id": "canal-sur",
+          "title": "Canal Sur Andalucía",
+          "description": "Canal Sur regional TV (Andalucía)",
+          "thumbnail": "https://graph.facebook.com/canalsurradioytv/picture?width=200&height=200",
+          "stream_type": "hls",
+          "stream_url": "https://live-24-canalsur.interactvty.pro/9bb0f4edcb8946e79f5017ddca6c02b0/26af5488cda642ed2eddd27a6328c93b9c03e9181b9d0a825147a7d978e69202.m3u8"
+        },
+        {
+          "id": "7tv-malaga",
+          "title": "7TV Málaga",
+          "description": "7TV Málaga regional channel",
+          "thumbnail": "https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200",
+          "stream_type": "hls",
+          "stream_url": "https://streaming004.gestec-video.com/hls/7TVMALAGA.m3u8"
+        }
+      ]
+    },
     {
       "name": "Test Streams",
       "items": [
@@ -14,28 +91,12 @@
           "stream_url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
         },
         {
-          "id": "test-2",
-          "title": "Sintel",
-          "description": "Open source animated film - HLS",
-          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Sintel-poster.jpg/440px-Sintel-poster.jpg",
-          "stream_type": "hls",
-          "stream_url": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
-        },
-        {
           "id": "test-3",
           "title": "Tears of Steel",
           "description": "Sci-fi open movie project - HLS",
           "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Tears_of_Steel_poster.jpg/440px-Tears_of_Steel_poster.jpg",
           "stream_type": "hls",
           "stream_url": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
-        },
-        {
-          "id": "test-4",
-          "title": "Elephant Dream",
-          "description": "First Blender open movie",
-          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Elephants_Dream_s1_proog.jpg/440px-Elephants_Dream_s1_proog.jpg",
-          "stream_type": "hls",
-          "stream_url": "https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8"
         }
       ]
     },
