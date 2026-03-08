@@ -1,0 +1,2 @@
+- user puede marcar canales que no le gustan. se guarda en local.
+- user puede marcar canales favoritos. se guarda en local. intentar que no se borre cada vez que se actualiza la app. guarda la id.
