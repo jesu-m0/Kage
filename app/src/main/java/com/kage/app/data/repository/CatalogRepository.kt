@@ -10,7 +10,7 @@ class CatalogRepository {
         return try {
             val url = Config.CATALOG_URL
             if (url.isBlank()) {
-                return Result.failure(IllegalStateException("Catalog URL not configured. Set Config.CATALOG_URL."))
+                return Result.failure(IllegalStateException("URL del catálogo no configurada. Configura Config.CATALOG_URL."))
             }
             val body = KageApiClient.fetchCatalogJson(url)
             val catalog = KageApiClient.json.decodeFromString<Catalog>(body)

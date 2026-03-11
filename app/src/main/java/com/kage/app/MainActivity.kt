@@ -27,6 +27,10 @@ import com.kage.app.ui.screens.HomeScreen
 import com.kage.app.ui.screens.LoadingScreen
 import com.kage.app.ui.screens.PlayerScreen
 import com.kage.app.ui.theme.KageTheme
+import com.kage.app.data.model.Category
+import com.kage.app.ui.screens.CategorySelectionScreen
+import com.kage.app.data.local.UserPreferencesManager
+import androidx.activity.compose.BackHandler
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,8 +44,9 @@ class MainActivity : ComponentActivity() {
 }
 
 sealed class Screen {
-    object Home : Screen()
-    data class Player(val item: StreamItem) : Screen()
+    object CategorySelection : Screen()
+    data class ChannelList(val category: Category) : Screen()
+    data class Player(val item: StreamItem, val fromCategory: Category) : Screen()
 }
 
 sealed class CatalogState {
@@ -52,9 +57,11 @@ sealed class CatalogState {
 
 @Composable
 fun KageAppContent() {
+    val context = LocalContext.current
+    val prefsManager = remember { UserPreferencesManager(context) }
     val repository = remember { CatalogRepository() }
     var catalogState by remember { mutableStateOf<CatalogState>(CatalogState.Loading) }
-    var currentScreen by remember { mutableStateOf<Screen>(Screen.Home) }
+    var currentScreen by remember { mutableStateOf<Screen>(Screen.CategorySelection) }
     var refreshTrigger by remember { mutableIntStateOf(0) }
 
     // Reload catalog on resume
@@ -76,12 +83,12 @@ fun KageAppContent() {
         val result = repository.fetchCatalog()
         catalogState = result.fold(
             onSuccess = { CatalogState.Success(it) },
-            onFailure = { CatalogState.Error(it.message ?: "Unknown error") }
+            onFailure = { CatalogState.Error(it.message ?: "Error desconocido") }
         )
     }
 
     when (val screen = currentScreen) {
-        is Screen.Home -> {
+        is Screen.CategorySelection -> {
             when (val state = catalogState) {
                 is CatalogState.Loading -> LoadingScreen()
                 is CatalogState.Error -> ErrorScreen(
@@ -89,28 +96,36 @@ fun KageAppContent() {
                     onRetry = { refreshTrigger++ }
                 )
                 is CatalogState.Success -> {
-                    val context = LocalContext.current
-                    HomeScreen(
+                    CategorySelectionScreen(
                         catalog = state.catalog,
-                        onItemClick = { item ->
-                            if (item.isAcestream) {
-                                val hash = item.streamUrl.removePrefix("acestream://")
-                                val started = tryStartAcestream(context, hash)
-                                if (!started) {
-                                    Toast.makeText(context, "Acestream app not installed", Toast.LENGTH_LONG).show()
-                                }
-                            } else {
-                                currentScreen = Screen.Player(item)
-                            }
-                        }
+                        prefsManager = prefsManager,
+                        onCategorySelected = { currentScreen = Screen.ChannelList(it) }
                     )
                 }
             }
         }
+        is Screen.ChannelList -> {
+            BackHandler { currentScreen = Screen.CategorySelection }
+            HomeScreen(
+                category = screen.category,
+                prefsManager = prefsManager,
+                onItemClick = { item ->
+                    if (item.isAcestream) {
+                        val hash = item.streamUrl.removePrefix("acestream://")
+                        val started = tryStartAcestream(context, hash)
+                        if (!started) {
+                            Toast.makeText(context, "Acestream no está instalado", Toast.LENGTH_LONG).show()
+                        }
+                    } else {
+                        currentScreen = Screen.Player(item, screen.category)
+                    }
+                }
+            )
+        }
         is Screen.Player -> {
             PlayerScreen(
                 item = screen.item,
-                onBack = { currentScreen = Screen.Home }
+                onBack = { currentScreen = Screen.ChannelList(screen.fromCategory) }
             )
         }
     }

@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.dp
 import com.kage.app.ui.theme.KagePrimary
 
 @Composable
-fun LoadingScreen(message: String = "Loading catalog...") {
+fun LoadingScreen(message: String = "Cargando catálogo...") {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -49,7 +49,7 @@ fun ErrorScreen(message: String, onRetry: () -> Unit) {
         )
         Spacer(modifier = Modifier.height(16.dp))
         Text(
-            text = "Press Enter to retry",
+            text = "Pulsa Enter para reintentar",
             style = MaterialTheme.typography.bodySmall
         )
     }
